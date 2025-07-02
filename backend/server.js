@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require("dotenv");
 const mongoose  = require("mongoose");
 dotenv.config();
-
+app.get('/favicon.ico', (req, res) => res.status(204).end());
 const userRouter = require('./routes/userRoute')
 
 app.use(express.json())
