@@ -19,7 +19,7 @@ import './read.css';
             this.setState({ data: updatedData });
 
             try {
-                const response = await fetch(`http://localhost:5000/${id}`, {
+                const response = await fetch(`https://full-stack-project-backend-wt7j.onrender.com/${id}`, {
                     method: 'DELETE',
                 });
 
@@ -36,7 +36,7 @@ import './read.css';
         getData = async () => {
             console.log("GET DATA EXECUTED");
             try {
-                const response = await fetch("http://localhost:5000");
+                const response = await fetch("https://full-stack-project-backend-wt7j.onrender.com");
                 const result = await response.json();
 
                 if (response.ok) {
