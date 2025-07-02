@@ -1,0 +1,11 @@
+.heading {
+    color:  rgb(119, 119, 119);
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
