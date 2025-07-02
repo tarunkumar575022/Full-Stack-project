@@ -18,7 +18,7 @@ const Create = () => {
         setLoading(true)
     
         const addUser = { name, email, age }
-        const url = "http://localhost:5000"
+        const url = "https://full-stack-project-backend-wt7j.onrender.com"
         const options = {
             method: "POST",
             body: JSON.stringify(addUser),
